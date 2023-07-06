@@ -1,0 +1,13 @@
+.pages__item {
+  box-sizing: border-box;
+  padding: 15px 10px;
+  display: inline-block;
+  line-height: 0px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+
+.pages__item:hover {
+  cursor: pointer;
+}

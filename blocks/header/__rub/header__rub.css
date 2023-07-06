@@ -1,0 +1,16 @@
+.header__rub {
+  margin-right: 40px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 660px) {
+  .header__rub {
+    margin-right: 5px;
+  }
+}
+
+/* @media screen and (max-width: 610px) {
+  .header__rub {
+    width: 10px;
+  }
+} */

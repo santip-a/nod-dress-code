@@ -1,0 +1,7 @@
+.header__main {
+  display: flex;
+  height: 55px;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+}

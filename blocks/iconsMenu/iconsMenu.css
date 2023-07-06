@@ -1,0 +1,7 @@
+.iconsMenu {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 20px 25px 0 25px;
+}
+

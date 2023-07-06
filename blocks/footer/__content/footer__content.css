@@ -1,0 +1,9 @@
+.footer__content {
+  box-sizing: border-box;
+  max-width: 1435px;
+  margin: 0 auto;
+  padding: 25px 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

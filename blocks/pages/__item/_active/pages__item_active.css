@@ -3,6 +3,6 @@
   color: white;
 }
 
-.pages__item_active:hover, .cursor:hover  {
+.pages__item_active:hover {
   cursor: default ;
 }

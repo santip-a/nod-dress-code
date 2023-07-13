@@ -39,7 +39,6 @@
 
 @import url(../blocks/card/card.css);
 @import url(../blocks/card/__image/card__image.css);
-@import url(../blocks/card/__image-container/card__image-container.css);
 @import url(../blocks/card/__title/card__title.css);
 @import url(../blocks/card/__subtitle/card__subtitle.css);
 @import url(../blocks/card/__subtitle-name/card__subtitle-name.css);
@@ -58,6 +57,21 @@
 @import url(../blocks/footer/__tile/footer__tile.css);
 
 @import url(../blocks/cursor/cursor.css);
+
+.header__logo-prompt {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-size: 12px;
+  /* top: 0;
+  left: 0; */
+
+}
+
+.header__logo-prompt_hiden {
+  display: none;
+}
 
 
 

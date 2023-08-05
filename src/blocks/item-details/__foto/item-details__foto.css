@@ -1,0 +1,14 @@
+.item-details__foto {
+  width: 645px;
+  height: 745px;
+  object-fit: contain;
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.item-details__foto:hover {
+  cursor: url(../../../images/icons/cursor.svg) 1 1, default;
+}

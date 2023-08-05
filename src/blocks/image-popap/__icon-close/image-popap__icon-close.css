@@ -1,0 +1,7 @@
+.image-popap__icon-close {
+  position: absolute;
+  top:15px;
+  right: 15px;
+  width: 25px;
+  cursor: url(../../../images/icons/cursor.svg) 1 1, default;
+}

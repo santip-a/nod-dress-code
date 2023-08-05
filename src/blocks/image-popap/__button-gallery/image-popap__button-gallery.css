@@ -1,0 +1,6 @@
+.image-popap__button-gallery {
+  position: absolute;
+  right: 10px;
+  width: 30px;
+  cursor: url(../../../images/icons/cursor.svg) 1 1, default;
+}

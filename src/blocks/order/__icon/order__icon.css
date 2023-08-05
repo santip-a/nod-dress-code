@@ -1,0 +1,5 @@
+.order__icon {
+  transform: rotate(-15deg);
+  margin-right: 40px;
+  object-fit: contain;
+}

@@ -1,0 +1,8 @@
+.description__list-item {  text-indent: -5px;
+  margin-bottom: 10px;
+}
+
+.description__list-item::before {
+  content: "-   ";
+  text-indent: -5px;
+}

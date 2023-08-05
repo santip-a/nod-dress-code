@@ -1,0 +1,8 @@
+.image-popap__main {
+  width: 90%;
+  object-fit: contain;
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  position: relative;
+}

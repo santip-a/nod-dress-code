@@ -1,0 +1,7 @@
+.basket__line {
+  border-left: 1px solid #181717;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 96%;
+}

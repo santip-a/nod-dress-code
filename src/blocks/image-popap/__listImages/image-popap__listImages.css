@@ -1,0 +1,9 @@
+.image-popap__listImages {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  grid-auto-rows: 70px;
+}

@@ -1,0 +1,18 @@
+.item-details__item-size {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align:bottom;
+  line-height: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.item-details__item-size:hover {
+  background-color: #CB1919;
+  color: white;
+  cursor: url(../../../images/icons/cursor.svg) 1 1, default;
+}

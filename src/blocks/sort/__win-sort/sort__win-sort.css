@@ -1,0 +1,10 @@
+.sort__win-sort {
+  position: absolute;
+  top: 35px;
+  min-width: 350px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.57);
+  padding: 10px;
+  z-index: 50;
+}

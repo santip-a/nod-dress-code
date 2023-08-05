@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Not Dress Code</title>
+  <link rel="icon" href="<%=require('./images/icons/logo.svg')%>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="магазин уникальной одежды а также для поклонников субкультурных стилей одежды – хард-рока, рокабилли, глэм-рока, панк-рока, хеви металла, готики и пр">
+  <meta name="keywords" content="рок, панк, готикаб хеви, хард">
+  <!-- <link rel="stylesheet" href="./styles/index.css"> -->
+
+</head>
+
+
+
+
+
+
+<header class="header">
+  <div class="header__main">
+    <nav>
+      <ul class="header__nav">
+        <li class="header__item">
+          <a class="header__link headet__elem-menu" href="#">Женщины</a>
+          <img class="header__select-icon" src="<%=require('./images/icons/select.svg')%>" alt="">
+        </li>
+        <li class="header__item">
+          <a class="header__link headet__elem-menu" href="#">Мужчины</a>
+          <img class="header__select-icon display-none" src="<%=require('./images/icons/select.svg')%>" alt="">
+        </li>
+        <li class="header__item">
+          <a class="header__link headet__elem-menu" href="#">Аксессуары</a>
+          <img class="header__select-icon display-none" src="<%=require('./images/icons/select.svg')%>" alt="">
+        </li>
+      </ul>
+    </nav>
+    <a href="#">
+      <img class="header__logo" src="<%=require('./images/icons/logo.svg')%>" alt="Логотип Not Drss Code">
+      <div class="header__logo-prompt header__logo-prompt_hiden">На главную страницу</div>
+    </a>
+    <div class="header__user-block">
+      <p class="header__name-site">Not Dress Code</p>
+      <a class="header__link header__auth" href="#">
+        <img class="header__auth-icon" src="<%=require('./images/icons/auth.svg')%>" alt="значек аторизации">
+        <span>Авторизоваться</span>
+      </a>
+      <a class="header__link header__link-basket" href="#">
+        <img class="header__basket-icon" src="<%=require('./images/icons/basket.svg')%>" alt="значек корзина">
+        <span class="header__total-price">0</span>
+        <span class="header__rub">руб.</span>
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<body class="root "> <!-- root__page-product  -->
+  <main class="main ">
+    <section class="catalog-page "> <!-- display-none -->
+      <dev class="iconsMenuSection">
+        <h1 class="iconsMenuSection__title">Женская одежда и мода</h1>
+        <div class="iconsMenu">
+          <div class="cardMenu">
+            <img class="cardMenu__image" src="#" alt="Футболки">
+            <p class="cardMenu__title" data-id="shirts">Футболки и топы</p>
+          </div>
+          <div class="cardMenu">
+            <img class="cardMenu__image" src="#" alt="Платья">
+            <p class="cardMenu__title" data-id="dresses">Платья</p>
+          </div>
+          <div class="cardMenu">
+            <img class="cardMenu__image" src="#" alt="Брюки">
+            <p class="cardMenu__title" data-id="trousers">Брюки</p>
+          </div>
+          <div class="cardMenu">
+            <img class="cardMenu__image" src="#" alt="купальники">
+            <p class="cardMenu__title" data-id="swimwear">Купальники</p>
+          </div>
+        </div>
+      </dev>
+
+      <div class="catalog ">
+        <div></div>
+        <ul class="sort">
+          <li class="sort__itmem">Сортировать</li>
+          <li class="sort__itmem sort__button sort__ABC">
+            <p class="sort__title-price">по&nbsp;цене</p>
+            <img class="sort__image_price " src="<%=require('./images/icons/sortCBA.svg')%>" alt="по цене">
+          </li>
+          <li class="sort__itmem">
+            <div class="sort__size">
+              <p class="sort__title-price">
+                по&nbsp;размеру
+              </p>
+              <img class="sort__image_price" src="<%=require('./images/icons/size.svg')%>" alt="по размеру">
+            </div>
+            <div class="sort__win-sort display-none">
+              <ul class="sort__list">
+                <li id="xxs" class="sort__list-item">xxs</li>
+                <li id="xs" class="sort__list-item">xs</li>
+                <li id="s" class="sort__list-item">s</li>
+                <li id="m" class="sort__list-item">m</li>
+                <li id="l" class="sort__list-item">l</li>
+                <li id="xl" class="sort__list-item">xl</li>
+                <li id="xxl" class="sort__list-item">xxl</li>
+                <li id="3xl" class="sort__list-item">3xl</li>
+                <li id="4xl" class="sort__list-item">4xl</li>
+                <li id="5xl" class="sort__list-item">5xl</li>
+                <li id="6xl" class="sort__list-item">6xl</li>
+                <li id="7xl" class="sort__list-item">7xl</li>
+              </ul>
+              <div class="sort__buttons-size ">
+                <button class="sort__button-size display-none" type="button">Найти</button> <!--  -->
+              </div>
+            </div>
+          </li>
+          <li class="sort__itmem">
+            <ul class="sort__select-size-list">
+              <!-- <li class="sort__select-size">
+                <p class="sort__title">xl</p>
+                <img class="sort__close-icon" src="<%=require('./images/icons/close.svg')%>" alt="крестик">
+              </li>             -->
+            </ul>
+            <button class="sort__button-close display-none" type="button">Удалить всё</button>
+          </li>
+
+        </ul>
+
+        <ul class="sidebar">
+          <!-- <li class="sidebar__item sidebar__item_active"><a href="#">Платья</a></li> -->
+        </ul>
+        <ul class="cards">
+          <p class="cards__message display-none">К сожалению таких размеров на данный момент нет.</p>
+          <!-- <li class="card"></li> -->
+        </ul>
+      </div>
+
+      <ul class="pages">
+        <!-- <li class="pages__item pages__item_active ">1</li> -->
+      </ul>
+    </section>
+
+    <section class="item-details display-none"> <!-- display-none -->
+      <div class="item-details__about-product">
+        <div class="gallery">
+          <!-- <img class="gallery__image"
+            src="https://4.downloader.disk.yandex.ru/preview/2f6d76fdd65e95e5e30aad3db22cdddea4501abedd99fb23407b8f4506bcb392/inf/1A9UuTL1034X5GUSPzEvA4Mj9DRyB0LGfHdEuPZJrBF8Jq65DQljfbn5deAtFOwdgM73C1reuwqf2NXDtlkmvA%3D%3D?uid=120089973&filename=11.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=120089973&tknv=v2&size=1903x947"
+            , alt="товар"> -->
+        </div>
+        <img class="item-details__foto"
+          src="https://4.downloader.disk.yandex.ru/preview/2f6d76fdd65e95e5e30aad3db22cdddea4501abedd99fb23407b8f4506bcb392/inf/1A9UuTL1034X5GUSPzEvA4Mj9DRyB0LGfHdEuPZJrBF8Jq65DQljfbn5deAtFOwdgM73C1reuwqf2NXDtlkmvA%3D%3D?uid=120089973&filename=11.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=120089973&tknv=v2&size=1903x947"
+          , alt="товар">
+
+        <div class="item-details__price-size ">
+          <div class="item-details__section">
+            <div class="item-details__price-logo">
+              <div class="item-details__price-block">
+                <p class="item-details__price-title">Цена: <span class="item-details__price">5600</span> руб.</p>
+                <p class="item-details__name">Платье средней длины "Audrey 50's" многоцветное от H&R London</p>
+              </div>
+              <img class="item-details__logo" src="<%=require('./images/logo-brand/h_r_london.svg')%>"
+                alt="лого бренда">
+            </div>
+            <a class="item-details__product-details" href="#detailed">Подробно о продукте</a>
+            <p class="item-details__info-size" href="#">Информация о размерах</p>
+            <ul class="item-details__list-size">
+              <!-- <li class="item-details__item-size">xs</li> -->
+            </ul>
+            <button class="item-details__button item-details__button-add-basket">
+              <!-- <img class="item-details__basket-icon " src="<%=require('./images/icons/basket.svg')%>"
+                alt="значек корзина"> -->
+              <p class="item-details__title-button">Добавить в корзину</p>
+            </button>
+            <button class="item-details__button item-details__button_back">
+              <p class="item-details__title-button">Вернуться назад</p>
+            </button>
+          </div>
+
+
+          <div class="description item-details__section ">
+            <div class="description__header">
+              <img class="description__logo" src="<%=require('./images/icons/paper.svg')%>" alt="лого бренда">
+              <h3 class="description__title">Описание</h3>
+            </div>
+
+            <ul class="description__list">
+              <li class="description__list-item">декоративный бант в области талии</li>
+              <!-- <li class="description__list-item">нижняя юбка из фатина</li>
+              <li class="description__list-item">сплошной цветочный прин</li>
+              <li class="description__list-item">молния сбоку</li> -->
+            </ul>
+            <div class="description__subtitle-list">
+              <p class="description__subtitle">Вы тоже полностью очарованы элегантным и милым стилем всемирно
+                известной
+                Одри Хепберн? Если вы тоже
+                хотите частичку ее славы, облачитесь в миди-платье Одри 50-х годов. Милое платье от HR London украшено
+                тысячами роз.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div id="detailed" class="detailed-description">
+        <div class="detailed-description__header">
+          <img class="description__logo" src="<%=require('./images/icons/papers.svg')%>" alt="значек страиц">
+          <h3 class="detailed-description__title">Подробная информация</h3>
+        </div>
+        <ul class="detailed-description__list">
+          <li class="detailed-description__list-item">
+            <span>Артикул</span>
+            <span>326876</span>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="basket display-none">
+      <div class="basket__order">
+        <div class="basket__header">
+          <p class="basket__header-title">Оформление заказа</p>
+          <!-- <img class="basket__close" src="<%=require('./images/icons/close-popup.svg')%>" alt="закрыть"> -->
+          <button class="basket__close basket__button-back" type="button">В магазин</button>
+          <hr class="basket__line">
+        </div>
+        <ul class="basket__list">
+          <!-- <li class="basket__item">
+            <div class="basket__produrt-title">
+              <img class="basket__image"
+                src="https://4.downloader.disk.yandex.ru/preview/2f6d76fdd65e95e5e30aad3db22cdddea4501abedd99fb23407b8f4506bcb392/inf/1A9UuTL1034X5GUSPzEvA4Mj9DRyB0LGfHdEuPZJrBF8Jq65DQljfbn5deAtFOwdgM73C1reuwqf2NXDtlkmvA%3D%3D?uid=120089973&filename=11.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=120089973&tknv=v2&size=1903x947"
+                alt="товар">
+              <p class="basket__subtitle">Платье средней длины "Audrey 50's" многоцветное от H&R London</p>
+              <p class="basket__subtitle basket__size">Размер -&nbsp<span class="basket__size-value">XL</span> </p>
+            </div>          
+            <div class="basket__price-block">
+              <div class="basket__choose-quantity">
+                <img class="basket__icons-minus" src="<%=require('./images/icons/basket-minus.svg')%>" alt="убрать">
+                <p class="basket__quantity">1</p>
+                <img class="basket__icons-plus" src="<%=require('./images/icons/basket-plus.svg')%>" alt="добавить">
+              </div>
+              <p class="basket__price-tatle">Цена&nbsp&nbsp<span class="basket__price">5600</span>&nbsp&nbspруб.</p>
+            </div>
+            <hr class="basket__line">
+          </li> -->
+        </ul>
+        <div class="basket__total-box">
+          <div class="basket__total-title">
+            <p class="basket__title">Итого:</p>
+            <p class="basket__title basket__delivery-title ">Доставка:</p>
+            <p class="basket__title">Итого с доставкой:</p>
+          </div>
+          <div class="basket__total-value">
+            <p class="basket__title basket__value"><span class="basket__cost">11200</span>&nbspруб.</p>
+            <p class="basket__title basket__delivery-title basket__value"> <span
+                class="basket__delivery basket__delivery-price">0</span>&nbspруб.</p>
+            <p class="basket__title basket__value"><span class="basket__total-price">11700</span>&nbspруб.</p>
+          </div>
+        </div>
+        <form name="order" class="basket__form " action="">
+          <ul class="basket__input-box">
+            <li class="basket__input-item">
+              <p class="basket__input-title">Имя (обязательно)</p>
+              <input class="basket__input" type="text" minlength="3" maxlength="30" name="name" id="" required>
+            </li>
+            <li class="basket__input-item">
+              <p class="basket__input-title">Укажите Ваш e-mail (обязательно)</p>
+              <input class="basket__input" type="email" name="email" minlength="3" maxlength="30" id="" required>
+            </li>
+            <li class="basket__input-item">
+              <p class="basket__input-title">Адрес (обязательно)</p>
+              <textarea class="basket__input" type="text" name="address" minlength="3" maxlength="150" id="" rows="3"
+                required></textarea>
+            </li>
+            <li class="basket__input-item">
+              <p class="basket__input-title">Вид доставки</p>
+              <select class="basket__input basket__input-select" name="delivery" required>
+                <option class="basket__select" value="">-- Выберете доставку --</option>
+                <option class="basket__select" value="500">курьерска</option>
+                <option class="basket__select" value="650">СДЭК</option>
+                <option class="basket__select" value="250">почта РФ</option>
+              </select>
+            </li>
+          </ul>
+          <div class="basket__button-box">
+            <!-- <button class="basket__button basket__button-back" type="button">В магазин</button> -->
+            <button class="basket__button" type="submit">Оформить заказ</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="order order_hidden"> <!-- order_hidden -->
+        <div class="order__modal"></div>
+        <div class="order__window">
+          <img class="order__icon" src="<%=require('./images/icons/iconOrder.png')%>" alt="">
+          <div class="order__text">
+            <p class="order__title order__header">Поздравляем! Ваш заказ оформлен!</p>
+            <p class="order__title order__subtitle">В ближайшее время менеджер свяжется с вами для уточнения деталий
+              заказа</p>
+            <p class="order__title order__subtitle ">Номер заказа -&nbsp <span class="order__number"> 34764 </span> </p>
+            <button class="order__button">в магазин</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer__content">
+      <ul class="footer__list">
+        <li class="footer__list-item cursor">
+          Часто задаваемые вопросы/помощь
+        </li>
+        <li class="footer__list-item cursor">
+          Доставка
+        </li>
+        <li class="footer__list-item cursor">
+          Оплата
+        </li>
+        <li class="footer__list-item cursor">
+          Политика возврата
+        </li>
+        <li class="footer__list-item cursor">
+          Таблица размеров
+        </li>
+      </ul>
+
+      <a href="#">
+        <img class="header__logo" src="<%=require('./images/icons/logo.svg')%>" alt="Логотип Not Drss Code">
+      </a>
+
+      <div class="footer__community">
+        <p class="footer__tile">Community</p>
+        <div class="footer__icons">
+          <a class="footer__icon" href="#">
+            <img src="<%=require('./images/icons/community/instagram.svg')%>" alt="инстаграм">
+          </a>
+          <a class="footer__icon" href="#">
+            <img src="<%=require('./images/icons/community/telegramm.svg')%>" alt="телеграмм">
+          </a>
+          <a class="footer__icon" href="#">
+            <img src="<%=require('./images/icons/community/vk.svg')%>" alt="вконтакте">
+          </a>
+          <a class="footer__icon" href="#">
+            <img src="<%=require('./images/icons/community/youtube.svg')%>" alt="ютуб">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <section class="image-popap image-popap_hidden"> <!-- image-popap_hidden  -->
+    <div class="image-popap__main">
+      <img class="image-popap__image"
+        src="https://4.downloader.disk.yandex.ru/preview/2f6d76fdd65e95e5e30aad3db22cdddea4501abedd99fb23407b8f4506bcb392/inf/1A9UuTL1034X5GUSPzEvA4Mj9DRyB0LGfHdEuPZJrBF8Jq65DQljfbn5deAtFOwdgM73C1reuwqf2NXDtlkmvA%3D%3D?uid=120089973&filename=11.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=120089973&tknv=v2&size=1903x947"
+        alt="фото товара">
+      <img class="image-popap__icon-close" src="<%=require('./images/icons/close-popup.svg')%>" alt="закрыть">
+      <img class="image-popap__button-gallery image-popap__icon-prev"
+        src="<%=require('./images/icons/arrow-prev.svg')%>" alt="назад">
+      <img class="image-popap__button-gallery image-popap__icon-next"
+        src="<%=require('./images/icons/arrow-next.svg')%>" alt="вперед">
+    </div>
+    <div class="image-popap__listImages">
+      <!-- <img class="image-popap__itemFoto image-popap__itemFoto_select" src="https://4.downloader.disk.yandex.ru/preview/2f6d76fdd65e95e5e30aad3db22cdddea4501abedd99fb23407b8f4506bcb392/inf/1A9UuTL1034X5GUSPzEvA4Mj9DRyB0LGfHdEuPZJrBF8Jq65DQljfbn5deAtFOwdgM73C1reuwqf2NXDtlkmvA%3D%3D?uid=120089973&filename=11.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=120089973&tknv=v2&size=1903x947" alt="фото товара"> -->
+    </div>
+  </section>
+
+
+  <!-- <script src="./scripts/script.js"></script> -->
+  <template id="card">
+    <li class="card">
+      <img class="card__image" src="#" alt="товар">
+      <p class="card__title">Цена: 5200 руб.</p>
+      <div class="card__name">
+        <p class="card__subtitle">"Woman's Dress Lilly"</p>
+        <p class="card__subtitle-name"> / Outer Vision</p>
+      </div>
+      <!-- <img class="card__basket" src="<%=require('./images/icons/basket-card.svg')%>" alt="корзина"> -->
+    </li>
+  </template>
+
+  <template id="sidebarTemplate">
+    <li class="sidebar__item">#</li>
+  </template>
+
+  <template id="pageBattonTemlate">
+    <li class="pages__item ">#</li>
+  </template>
+
+  <template id="selectedSizes">
+    <li class="sort__select-size">
+      <p class="sort__title">xl</p>
+      <img class="sort__close-icon" src="<%=require('./images/icons/close.svg')%>" alt="крестик">
+    </li>
+  </template>
+
+  <template id="galleryTemplate">
+    <img id='0' class="gallery__image"
+      src="https://2.downloader.disk.yandex.ru/preview/673ae231b66523c7a373eb7a567fd128b32c0a32496a60718cae93d674071723/inf/3WO8keKjLM0A9LvyrqbzA5Wdn6PHFPAhSoUJcmJe0bPPSbcNdbxLAXgX50SwWYJoXHtl657f-YtHrXJcYqMe1Q%3D%3D?uid=120089973&filename=11-z.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=120089973&tknv=v2&size=1903x947"
+      alt="товар">
+  </template>
+
+  <template id="popupCallery">
+    <img id="0" class="image-popap__itemFoto"
+      src="https://4.downloader.disk.yandex.ru/preview/2f6d76fdd65e95e5e30aad3db22cdddea4501abedd99fb23407b8f4506bcb392/inf/1A9UuTL1034X5GUSPzEvA4Mj9DRyB0LGfHdEuPZJrBF8Jq65DQljfbn5deAtFOwdgM73C1reuwqf2NXDtlkmvA%3D%3D?uid=120089973&filename=11.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=120089973&tknv=v2&size=1903x947"
+      alt="фото товара">
+  </template>
+
+  <template id="selectSize">
+    <li id="0" class="item-details__item-size">xxs</li>
+  </template>
+
+  <template id="productInBasketTemplate">
+    <li id="0" class="basket__item">
+      <div class="basket__produrt-title">
+        <img class="basket__image"
+          src="https://4.downloader.disk.yandex.ru/preview/2f6d76fdd65e95e5e30aad3db22cdddea4501abedd99fb23407b8f4506bcb392/inf/1A9UuTL1034X5GUSPzEvA4Mj9DRyB0LGfHdEuPZJrBF8Jq65DQljfbn5deAtFOwdgM73C1reuwqf2NXDtlkmvA%3D%3D?uid=120089973&filename=11.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=120089973&tknv=v2&size=1903x947"
+          alt="товар">
+        <p class="basket__subtitle">Платье средней длины "Audrey 50's" многоцветное от H&R London</p>
+        <p class="basket__subtitle basket__size">Размер -&nbsp<span class="basket__size-value">XL</span> </p>
+      </div>
+      <div class="basket__price-block">
+        <div class="basket__choose-quantity">
+          <img class="basket__icons-minus" src="<%=require('./images/icons/basket-minus.svg')%>" alt="убрать">
+          <p class="basket__quantity">1</p>
+          <img class="basket__icons-plus" src="<%=require('./images/icons/basket-plus.svg')%>" alt="добавить">
+        </div>
+        <p class="basket__price-tatle">Цена&nbsp&nbsp<span class="basket__price">5600</span>&nbsp&nbspруб.</p>
+      </div>
+      <hr class="basket__line">
+    </li>
+  </template>
+
+  <template id="description">
+    <li class="description__list-item">декоративный бант в области талии</li>
+  </template>
+
+  <template id="optionalDescriptionTemplate">
+    <p class="description__subtitle">Вы тоже полностью очарованы элегантным и милым стилем всемирно</p>
+  </template>
+
+  <template id="longDescriptionTemplate">
+    <li class="detailed-description__list-item">
+      <span class="detailed-description__name">Артикул</span>
+      <span class="detailed-description__value">326876</span>
+    </li>
+  </template>
+
+
+  
+</body>
+
+</html>

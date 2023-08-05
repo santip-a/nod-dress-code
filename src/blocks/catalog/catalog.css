@@ -1,0 +1,7 @@
+.catalog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto auto;
+  padding-top:40px;
+}

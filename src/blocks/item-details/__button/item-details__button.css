@@ -1,0 +1,19 @@
+.item-details__button {
+  background-color: #CB1919;
+  border: 1px solid #CB1919;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-details__button:hover {
+  cursor: url(../../../images/icons/cursor.svg) 1 1, default;
+}
+
+.item-details__button:disabled {
+  opacity: .5;;
+}

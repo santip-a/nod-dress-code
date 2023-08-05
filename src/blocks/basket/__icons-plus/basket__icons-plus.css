@@ -1,0 +1,9 @@
+.basket__icons-plus {
+  width: 25px;
+  height: 25px;
+}
+
+.basket__icons-plus:hover {
+  opacity: .3;
+  cursor: url(../../../images/icons/cursor.svg) 1 1, default;
+}

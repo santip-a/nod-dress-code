@@ -1,0 +1,9 @@
+.basket__close {
+  width: 20px;
+  height: 20px;
+}
+
+.basket__close:hover {
+  opacity: 0.2;
+  cursor: url(../../../images/icons/cursor.svg) 1 1, default;
+}

@@ -1,0 +1,14 @@
+.basket__button-back {
+  background-color: white;
+  border: 1px solid black;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 0 20px 20px 0;
+}
+
+.basket__button-back:hover {
+  background-color: rgb(228, 187, 179);
+  cursor: url(../../../images/icons/cursor.svg) 1 1, default;
+  opacity: 0.9;
+}

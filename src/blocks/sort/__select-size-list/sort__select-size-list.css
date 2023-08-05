@@ -1,0 +1,10 @@
+.sort__select-size-list {
+  list-style-type: none;
+  margin: 5px 0 0 0;
+  padding: 0;
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  z-index: 0;
+}

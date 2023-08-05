@@ -1,0 +1,10 @@
+.item-details__info-size {
+  margin: 60px 0 0 0;
+  font-size: 12px;
+  font-style: italic;
+  text-decoration: underline;  
+}
+
+.item-details__info-size:hover {
+  cursor: url(../../../images/icons/cursor.svg) 1 1, default;
+}

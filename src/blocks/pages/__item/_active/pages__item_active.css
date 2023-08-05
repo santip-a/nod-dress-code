@@ -1,8 +1,0 @@
-.pages__item_active {
-  background-color: black;
-  color: white;
-}
-
-.pages__item_active:hover {
-  cursor: default ;
-}

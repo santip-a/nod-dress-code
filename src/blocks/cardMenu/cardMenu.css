@@ -1,9 +1,0 @@
-.cardMenu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  max-width: 310px;
-}
-

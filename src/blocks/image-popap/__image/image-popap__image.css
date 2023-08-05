@@ -1,9 +1,0 @@
-.image-popap__image {
-  margin: 0 auto;
-  transition: transform 0.25s;
-}
-
-.image-popap__image:hover {
-  transform: scale(1.7);
-  cursor: zoom-in;
-}

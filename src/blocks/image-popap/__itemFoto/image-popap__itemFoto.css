@@ -1,9 +1,0 @@
-.image-popap__itemFoto {
-  width: 60px;
-  height: 60px;
-  background-color: white;
-  object-fit: contain;
-  padding: 5px;
-  cursor: url(../../../images/icons/cursor.svg) 1 1, default;
-  box-sizing: border-box;
-}
